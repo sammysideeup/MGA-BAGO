@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    height: 100vh;
+}
+
+
+/* The flex container */
+.container {
+    display: flex;
+    height: 200vh;
+}
+
+/* Sidebar style */
+.sidebar {
+    width: 250px;
+    background-color: #161515;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.sidebar ul li:hover {
+    background: #333;
+    border-radius: 5px;
+}
+
+
+/* Main progress content */
+.progress-container {
+    flex: 1;
+    padding: 40px;
+}
+
+.progress-container h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Statistics grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: #007bff;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
